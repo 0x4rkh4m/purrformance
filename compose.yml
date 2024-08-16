@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ./purrformance-api
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/purrformance-db
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:7.0.12
+    ports:
+      - "27017:27017"
+
