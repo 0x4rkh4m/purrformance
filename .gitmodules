@@ -1,3 +1,6 @@
 [submodule "purrformance-api"]
 	path = purrformance-api
 	url = https://github.com/0x4rkh4m/purrformance-api
+[submodule "purrformance-client"]
+	path = purrformance-client
+	url = https://github.com/0x4rkh4m/purrfomance-client
